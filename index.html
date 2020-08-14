@@ -108,7 +108,7 @@ let fanFibase;
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  var fireBaseRef = new Firebase("https://bachchau-2406.firebaseio.com");
+  var fireBaseRef = new Firebase("https://bachchau-2305.firebaseio.com");
   
   const database = firebase.database();
   
@@ -139,16 +139,16 @@ getData();
          if(dose>2){
             document.getElementById("dose").style.color = "#e52e00";
             document.getElementById("dose").innerHTML = dose ;
-            document.getElementById("light3").innerHTML="<img src='do.png' style='width:150px;height:150px;'>";
-            document.getElementById("light2").innerHTML="<img src='trang.png' style='width:150px;height:150px;'>";
-            document.getElementById("light1").innerHTML="<img src='trang.png' style='width:150px;height:150px;'>";
+            document.getElementById("light3").innerHTML="<img src='do.png' style='width:70px;height:70px;'>";
+            document.getElementById("light2").innerHTML="<img src='trang.png' style='width:70px;height:70px;'>";
+            document.getElementById("light1").innerHTML="<img src='trang.png' style='width:70px;height:70px;'>";
          }
          if(dose==2){
             document.getElementById("dose").style.color = "red";
             document.getElementById("dose").innerHTML = dose ;
-            document.getElementById("light3").innerHTML="<img src='do.png' style='width:150px;height:150px;'>";
-            document.getElementById("light2").innerHTML="<img src='trang.png' style='width:150px;height:150px;'>";
-            document.getElementById("light1").innerHTML="<img src='trang.png' style='width:150px;height:150px;'>";
+            document.getElementById("light3").innerHTML="<img src='do.png' style='width:70px;height:70px;'>";
+            document.getElementById("light2").innerHTML="<img src='trang.png' style='width:70px;height:70px;'>";
+            document.getElementById("light1").innerHTML="<img src='trang.png' style='width:70px;height:70px;'>";
          }
          if(dose>0.6) {
            if(dose<2){
@@ -156,17 +156,17 @@ getData();
             document.getElementById("dose").innerHTML = dose +"uSv/h" ;
 
            
-             document.getElementById("light2").innerHTML="<img src='vang.png' style='width:150px;height:150px;'>";
-             document.getElementById("light3").innerHTML="<img src='trang.png' style='width:150px;height:150px;'>";
-            document.getElementById("light1").innerHTML="<img src='trang.png' style='width:150px;height:150px;'>";
+             document.getElementById("light2").innerHTML="<img src='vang.png' style='width:70px;height:70px;'>";
+             document.getElementById("light3").innerHTML="<img src='trang.png' style='width:70px;height:70px;'>";
+            document.getElementById("light1").innerHTML="<img src='trang.png' style='width:70px;height:70px;'>";
           }
          }
           if(dose < 0.6  ){
             document.getElementById("dose").style.color = "goldenrod";
             document.getElementById("dose").innerHTML = dose + "uSv/h";
-             document.getElementById("light1").innerHTML="<img src='xanh.png' style='width:150px;height:150px;'>";
-             document.getElementById("light2").innerHTML="<img src='trang.png' style='width:150px;height:150px;'>";
-            document.getElementById("light3").innerHTML="<img src='trang.png' style='width:150px;height:150px;'>";
+             document.getElementById("light1").innerHTML="<img src='xanh.png' style='width:70px;height:70px;'>";
+             document.getElementById("light2").innerHTML="<img src='trang.png' style='width:70px;height:70px;'>";
+            document.getElementById("light3").innerHTML="<img src='trang.png' style='width:70px;height:70px;'>";
           }
           if(dose == 0.6  ){
             document.getElementById("dose").style.color = "green";

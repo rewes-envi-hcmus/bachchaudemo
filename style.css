@@ -666,7 +666,10 @@ body{
        margin-right: 150px;
        margin-bottom: 200px;
      }
-  
+  #ligh1{
+      width: 100px;
+
+  }
     .img1{
         grid-area: img1;
         width: 70px;
@@ -678,6 +681,7 @@ body{
         grid-area: img2;
      padding: 0 20px 0 20px;
      width: 70px;
+     
 
      height: 70px;
     }
